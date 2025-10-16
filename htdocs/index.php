@@ -1,37 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <?php include('./modules/parts/config.php'); ?>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moj WEB</title>
-    <link rel="stylesheet" href="style1.css">
-    <?php include("config.php"); ?>
+    <title>Uvod - <?php echo (WEB_NAME); ?></title>
+    <?php include('./modules/parts/sections/head.php'); ?>
+    
 </head>
+
 <body>
-    <header>
-        <div class="header-log">
-            <img src="./assts/imgs/logoCat.png">
-        </div>
-        <nav>
-            <ul>
-                <li><a href = "./index.php">Uvod</a></li>
-                <li><a href = "./about.php">O mne</a></li>
-                <li><a href = "./contacts.php">Kontakty</a></li>
-                
-        </nav>
-    </header>
     <main>
-        <h1>nadpis</h1>
-        <p>
-            <?php echo($profil[0][0]);?>
-        </p>
+    <?php
+         include('./modules/parts/sections/header.php');
+         include('./modules/parts/sections/intro.php');
+       // include('./modules/parts/sections/about.php');
+       // include('./modules/parts/sections/contact.php');
+       // include('./modules/parts/sections/products.php');
+       ?>
     </main>
-
-    <aside></aside>
-   
-    <footer></footer>
-
-
+    
+    <?php include('./modules/parts/sections/footer.php'); ?>
     
 </body>
 </html>
