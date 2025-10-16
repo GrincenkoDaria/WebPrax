@@ -1,0 +1,31 @@
+*   {
+    
+    background-color: #d2c2e4;
+
+}
+
+body {
+    font-size: large;
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+
+a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(169, 241, 244);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+a:active {
+    color: rgb(158, 118, 197);
+    text-decoration: none;
+}
